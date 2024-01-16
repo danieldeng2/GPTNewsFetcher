@@ -76,6 +76,7 @@ def discover_articles_for_country(country, articles_per_source=10):
         excludes = set(source["excludes"])
         articles_list = [
             article_url for article_url in articles_list if article_url not in excludes]
+        # for article_url in ["https://www.bbc.co.uk/news/uk-politics-67999810"]:
         for article_url in articles_list[:articles_per_source]:
             article = fetch_article(article_url)
             article = translate_article(article)
