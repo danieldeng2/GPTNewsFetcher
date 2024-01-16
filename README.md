@@ -2,8 +2,10 @@
 
 # Installation
 
+Set OpenAI API key via: `export OPENAI_API_KEY='sk-xxxx'` in `~/.zshrc`.
+
 ```
-python -m virtualenv venv
+python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -15,3 +17,5 @@ Specify RSS feed sources in `feed.json`. Execute:
 ```
 python main.py
 ```
+
+The translated articles will appear inside the `articles` folder.
